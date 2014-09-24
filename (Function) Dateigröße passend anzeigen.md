@@ -2,7 +2,7 @@ Die an die folgenden Funktionen übergebene Zahl wird entsprechend in "Byte","KB
 
 In PHP:
 
-
+```php
 function mysize($size)                      
     {
         $ret=$size;
@@ -13,10 +13,10 @@ function mysize($size)
         }
         return round($ret,2)." ".$e[$i];
     }
-    
+```
 
 In C++ :
-
+```c
 string mysize(float size) {
   std::stringstream str;
   int i=0;
@@ -26,5 +26,6 @@ string mysize(float size) {
   str<<round(tmp*100)/100<<" "<<e[i];
   return str.str();
 }
+```
 
 
