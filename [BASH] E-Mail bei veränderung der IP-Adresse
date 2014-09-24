@@ -1,4 +1,3 @@
-```bash
 #!/bin/bash
 
 # Wenn man eine DynDNS Adresse für seinen Home-Server besitzt und immer über die aktuelle IP per E-Mail benachrichtigt werden will, 
@@ -19,4 +18,4 @@ else
                 fi  
         fi  
 fi
-```
+
