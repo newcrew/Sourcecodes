@@ -5,7 +5,7 @@ Hier finden sich Sourcecodes, welche auf New-Crew (https://new-crew.net) veröff
 
 Alle hier veröffentlichte Sourcecodes stehen unter der WTFPL (Do What The Fuck You Want To Public License).
 
-'''
+```
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                     Version 2, December 2004
  
@@ -19,4 +19,4 @@ DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
  
   0. You just DO WHAT THE FUCK YOU WANT TO.
-  1. '''
+```
