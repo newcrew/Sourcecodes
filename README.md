@@ -3,7 +3,7 @@ Sourcecodes
 Hier finden sich Sourcecodes, welche auf New-Crew (https://new-crew.net) veröffentlicht sind.
 
 
-Alle hier veröffentlichte Sourcecodes stehen unter der WTFPL (Do What The Fuck You Want To Public License).
+Alle hier veröffentlichten Sourcecodes stehen unter der WTFPL (Do What The Fuck You Want To Public License).
 
 ```
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
