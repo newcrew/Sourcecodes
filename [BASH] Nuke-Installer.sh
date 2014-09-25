@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Baut Selbstzerstörung (Nuke) in Kali-Linux ein
+
 VERSION=0.1
 
 LUKS_HEADER_BACKUP="luksheader.back"
