@@ -10,15 +10,15 @@
 ██║╚██╗██║██╔══╝  ██║███╗██║╚════╝██║     ██╔══██╗██╔══╝  ██║███╗██║
 ██║ ╚████║███████╗╚███╔███╔╝      ╚██████╗██║  ██║███████╗╚███╔███╔╝
 ╚═╝  ╚═══╝╚══════╝ ╚══╝╚══╝        ╚═════╝╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ .net
-	[ Written by Rasputin ]
+	[ Written by Rasputin ~ visit new-crew.net]
 	
 	Usage: php5 <scriptname>.php <target>
 	
 	Example:
 	$ php5 bashbledd_scanner.php southpark.de
-  [!] No Vulnerabilities Found
-  [*] The server responded: 200 OK
-  $
+  	[!] No Vulnerabilities Found
+  	[*] The server responded: 200 OK
+  	$
 
 */
 
