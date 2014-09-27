@@ -52,7 +52,6 @@
             		die("No HTTP code was returned"); 
     		} else {
         		// load the HTTP codes
-        		$http_codes = parse_ini_file("errorcode.ini");
         		$pos = strpos($ret, "R4sp7in");
 			if( ($pos) || ($info['http_code'] == "500") ) {
 				echo "[*] Bashbleed FOUND !!!\n";
@@ -70,7 +69,7 @@
 				echo "[!] No Vulnerabilities Found\n";
 			// echo results
         		echo "[*] The server responded: ";
-        		echo $info['http_code'] . " " . $http_codes[$info['http_code']] . "\n";
+        		echo $info['http_code'] . "\n";
     
 		}
 
