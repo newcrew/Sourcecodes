@@ -79,6 +79,6 @@
 		}
 		else {
 			echo "Target-URL?\n";
-			echo "Usage: " . argv[0] . "<Target-URL>\n";
+			echo "Usage: " . $argv[0] . " <Target-URL>\n";
 		}
 	?>
