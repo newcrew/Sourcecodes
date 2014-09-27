@@ -17,7 +17,7 @@
 	Example:
 	$ php5 bashbledd_scanner.php southpark.de
   	[!] No Vulnerabilities Found
-  	[*] The server responded: 200 OK
+  	[*] The server responded: 200 
   	$
 
 */
