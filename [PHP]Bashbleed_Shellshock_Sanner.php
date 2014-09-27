@@ -29,7 +29,7 @@
 
 		$ch = curl_init(); // create cURL handle (ch)
 		if (!$ch) {
-			die("Couldn't initialize a cURL handle");
+			die("[!] Couldn't initialize a cURL handle");
 		}
 		if( $argv[1] ){
 			// set some cURL options
@@ -45,7 +45,7 @@
 
 			if (empty($ret)) {
 				// some kind of an error happened
-				die(curl_error($ch)."\n");
+				die("[!] " . curl_error($ch)."\n");
 				curl_close($ch); // close cURL handler
 			} else {
 				$info = curl_getinfo($ch);
@@ -71,7 +71,7 @@
 						echo "[!] No Vulnerabilities Found\n";
 						// echo results
 					echo "[*] The server responded: ";
-					echo $info['http_code'] .  "\n";
+					echo $info['http_code'] . "\n";
 	    
 				}
 
