@@ -16,7 +16,7 @@
 		Usage: php5 <scriptname>.php <target>
 		
 		Example:
-		$ php5 bashbledd_scanner.php southpark.de
+		$ php5 bashbleed_scanner.php southpark.de
 		[!] No Vulnerabilities Found
 		[*] The server responded: 200 OK
 		$
