@@ -18,7 +18,7 @@
 		Example:
 		$ php5 bashbleed_scanner.php vulnsite.vuln
 		[*] Bashbleed FOUND !!!
-		[*] uid=33(www-data) gid=33(www-data) groups=33(www-data),1026(www.80s-radio.de)
+		[*] uid=33(www-data) gid=33(www-data) groups=33(www-data)
 		[*] The server responded: 500 Internal Server Error
 		$
 
