@@ -66,6 +66,7 @@
 						$ret2 = curl_setopt($ch2, CURLOPT_TIMEOUT,        30);
 						$ret2 = curl_exec($ch2);
 						echo "[*] " . $ret2;
+						curl_close($ch2); // close cURL handler
 					}
 					else
 						echo "[!] No Vulnerabilities Found\n";
