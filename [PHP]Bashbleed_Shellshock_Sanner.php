@@ -16,9 +16,10 @@
 		Usage: php5 <scriptname>.php <target>
 		
 		Example:
-		$ php5 bashbleed_scanner.php southpark.de
-		[!] No Vulnerabilities Found
-		[*] The server responded: 200 OK
+		$ php5 bashbleed_scanner.php vulnsite.vuln
+		[*] Bashbleed FOUND !!!
+		[*] uid=33(www-data) gid=33(www-data) groups=33(www-data),1026(www.80s-radio.de)
+		[*] The server responded: 500 Internal Server Error
 		$
 
 	*/
